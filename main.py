@@ -54,11 +54,9 @@ while running:
         
 
         if hero.rect.top < 0:
-            hero.rect.top = HEIGHT  
-
-        if hero.rect.bottom > HEIGHT:
             hero.rect.top = 0
-
+        elif hero.rect.bottom > HEIGHT:
+            running = False
             
     keys = pygame.key.get_pressed()
     for sprite in all_sprites:
