@@ -20,3 +20,5 @@ class Player(pygame.sprite.Sprite):
         self.speed = self.speed+0.1
 
         self.rect.y += self.speed
+
+    
