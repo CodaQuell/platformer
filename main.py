@@ -46,17 +46,12 @@ while running:
 
         if event.type == add_enemy:
             height = random.randint(100,400)
-            enemy1 = Enemy((WIDTH+100,height-350),5)
             enemy2 = Enemy((WIDTH+100,height+350),5)
 
-            all_sprites.add(enemy1)
-            all_sprites.add(enemy2)
-            all_enemies.add(enemy1)
-            all_enemies.add(enemy2)
             
-
-
-
+            all_sprites.add(enemy2)
+            all_enemies.add(enemy2)
+        
 
         if hero.rect.top < 0:
             hero.rect.top = HEIGHT  
